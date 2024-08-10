@@ -4,9 +4,6 @@ set -e
 
 eval "$(conda shell.bash hook)"
 
-conda init
-source ../.bashrc
-
 sudo apt-get update
 sudo ln -snf /usr/share/zoneinfo/$CONTAINER_TIMEZONE /etc/localtime
 sudo apt-get install -y libsm6 libxext6 ffmpeg zip 

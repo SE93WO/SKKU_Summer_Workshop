@@ -4,9 +4,6 @@ set -e
 
 eval "$(conda shell.bash hook)"
 
-conda init
-source ../.bashrc
-
 sudo apt-get update -y 
 sudo ln -snf /usr/share/zoneinfo/$CONTAINER_TIMEZONE /etc/localtime
 sudo apt-get install -y libgl1-mesa-glx
